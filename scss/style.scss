@@ -1,23 +1,6 @@
 @import "functions";
 @import 'variables';
 
-body {
-  overflow: hidden;
-}
-
-#loading {
-  // background-color: #fff;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // z-index: 99999999;
-  i {
-  color: $primary;
-  font-size: 50px;
-  }
-}
 ::selection {
   background: $primary;
   color: white;
@@ -48,7 +31,6 @@ ul {
   list-style: circle;
 }
 .navbar {
-  display: none;
   .nav-link {
     letter-spacing: 3px;
     font-family: 'Fredoka One', cursive;

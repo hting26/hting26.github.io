@@ -15,12 +15,12 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/dff5f2c4f3.js" crossorigin="anonymous"></script>
   <script src="./js/all.js"></script>
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
-  <div id="loading">
-    <i class="fa-solid fa-spinner fa-spin"></i>
-  </div>
   <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="navbar">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -42,7 +42,7 @@
     </div>
   </nav>
   <section id="section01">
-    <div class="container">
+    <div class="container wow animate__slideInUp">
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="pic"></div>
@@ -164,7 +164,7 @@
     </div>
   </section>
   <section id="section03">
-    <div class="container text-center">
+    <div class="container text-center wow animate__slideInUp">
       <h2 class="mb-4">Portfolio</h2>
       <div class="row">
         <div class="col-12">
@@ -186,8 +186,8 @@
             <div class="card-body">
               <h5 class="card-title">瑪莉愛狗協會網站</h5>
               <div class="card-text">
-              使用Vue CLI及Node.js開發的網站，搭配MongoDB資料庫。<br>
-              是以替原本較舊的網站改版為出發點，可讓訪客登入會員、選購捐贈物資、送出訂單、申請領養狗狗等。
+                使用Vue CLI及Node.js開發的網站，搭配MongoDB資料庫。<br>
+                是以替原本較舊的網站改版為出發點，可讓訪客登入會員、選購捐贈物資、送出訂單、申請領養狗狗等。
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mark">使用者功能</div>
@@ -307,14 +307,20 @@
   </section>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <!-- wow -->
+  <script src="./js/wow.min.js"></script>
   <script>
-    const loading = document.getElementById('loading')
-    const navbar = document.getElementById('navbar')
-    window.onload = () => {
-      loading.style.display = 'none'
-      document.body.style.overflow = 'visible'
-      navbar.style.display = 'block'
-    }
+    var wow = new WOW(
+      {
+        boxClass: 'wow',
+        animateClass: 'animate__animated',
+        offset: 0,
+        mobile: true,
+        live: true
+      }
+    )
+    wow.init();
   </script>
 </body>
 
