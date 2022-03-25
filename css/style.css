@@ -159,6 +159,14 @@ h3, h2 {
   transition: .5s;
 }
 
+#section02 h5 {
+  border-bottom: 3px solid rgba(238, 226, 226, 0.8);
+  margin-bottom: 1rem;
+  padding-bottom: 7px;
+  font-weight: 600;
+  display: inline-block;
+}
+
 #section02 h6 {
   color: #a38f7b;
   font-weight: 600;
