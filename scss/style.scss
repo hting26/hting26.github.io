@@ -48,13 +48,13 @@ ul {
   }
 }
 #section01 {
-  padding-top: 160px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 0px;
   .pic {
-    width:300px;
-    height:300px;
-    // background: url(../img/my.jpg)no-repeat center/cover;
-    background: url(../img/coding.png)no-repeat center/cover;
+    width:140px;
+    height:140px;
+    background: url(../img/my.jpg)no-repeat center/cover;
+    // background: url(../img/coding.png)no-repeat center/cover;
     border-radius: 10px;
     transition: .5s;
     &:hover {
@@ -131,7 +131,7 @@ h3,h2 {
     }
   }
   .card-body {
-    padding: 10px 25px 0;
+    padding: 10px 20px 0;
   }
   h5{
     border-bottom: 3px solid rgba(238, 226, 226, 0.8);
@@ -177,11 +177,19 @@ h3,h2 {
       }
     }
   }
+  .card-body {
+    padding: 1rem .5rem;
+  }
   .imgbox {
     overflow: hidden;
     position: relative;
   }
   .card-img-top {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
     object-fit: cover;
     transition: .5s;
     transform: scale(1.005);
@@ -250,6 +258,20 @@ h3,h2 {
       margin-bottom: 50px;
     }
   }
+  .work_pjc {
+    .imgbox {
+      width: 100%;
+      /* Set the aspect ratio, here 16:9 */
+      padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    }
+    .card-img-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 @media (min-width:992px) {
   #section01 {
@@ -261,8 +283,8 @@ h3,h2 {
     padding-right: 100px;
   }
   #section03 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     .card-text {
       font-size: .95rem;
       line-height: 1.7rem;

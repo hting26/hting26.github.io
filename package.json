@@ -1,5 +1,4 @@
-{
-  "dependencies": {
-    "html-minifier": "^4.0.0"
-  }
+{"scripts": {
+  "build": "html-minifier --collapse-whitespace --remove-comments index.dev.html -o index.html"
+}
 }
