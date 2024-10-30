@@ -60,7 +60,7 @@ ul {
 #section01 .pic {
   width: 140px;
   height: 140px;
-  background: url(../img/my.jpg) no-repeat center/cover;
+  background: url(../img/mypic.jpg) no-repeat center/cover;
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
